@@ -1,0 +1,18 @@
+.link {
+    transition: $transition;
+    
+    &-lg:link,
+    &-lg:visited {
+        font-size: 1.6rem;
+    }
+
+    &-sm:link,
+    &-sm:visited {
+        font-size: 1.3rem;
+    }
+
+    &:hover,
+    &:active {
+        color: $color-orange;
+    }
+}
