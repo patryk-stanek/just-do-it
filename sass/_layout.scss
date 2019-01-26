@@ -17,6 +17,15 @@ body {
     height: 100%;
 }
 
+section {
+    background-color: $color-white;
+    box-shadow: 0 0 1rem 0 rgba($color-black, .1);
+
+    &:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+    }
+}
+
 .column {
     height: 100%;
     display: flex;
@@ -29,15 +38,19 @@ body {
     flex-direction: column;
     flex-shrink: 0;
     height: 100vh;
-    background-color: $color-grey-dark-1;
+    background-color: $color-grey;
+    width: 12.5%;
 }
 
 .topmenu {
     flex-shrink: 0;
     display: inline-flex;
+    justify-content: flex-end;
 }
 
 .content {
     flex-grow: 1;
     overflow: auto;
+    background-color: $color-grey-light-2;
+    padding: 1.5rem;
 }
