@@ -17,16 +17,25 @@
 
     &__block:link,
     &__block:visited {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
         display: flex;
         align-items: center;
         margin-right: .5rem;
+        transition: $transition;
+        border: 1px solid transparent;
+        border-radius: 4px;
+
+        &:hover,
+        &:active {
+            border: 1px solid $color-grey-dark-3;
+        }
     }
 
     &__button,
     &__button::before,
     &__button::after {
+        margin: 0 auto;
         height: 2px;
         width: 2rem;
         display: block;
@@ -98,6 +107,7 @@
         font-size: 1.4rem;
         margin-top: 1.5rem;
         position: relative;
+        transition: $transition;
 
         &::before {
             content: "";
@@ -110,6 +120,11 @@
             background-color: $color-green-dark;
             z-index: 10;
             border-radius: 50%;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-green-dark;
         }
     }
 
