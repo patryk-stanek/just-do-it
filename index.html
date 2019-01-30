@@ -117,7 +117,7 @@
                 <section class="statistics">
                     <h2 class="section__title">General statistics</h2>
                     <div class="statistics__date">
-                        <div class="statistics__input">
+                        <div class="statistics__input-date">
                             <input type="date" id="start" name="start"
                                 value="2018-07-22"
                                 min="2018-01-01" max="2019-12-31">
@@ -128,11 +128,11 @@
                         <svg class="statistics__calendar">
                             <use xlink:href="images/svg/calendar.svg#Layer_1"></use>
                         </svg>
-                        <a href="#" class="btn btn-orange">
+                        <button class="btn btn-orange">
                             <svg class="statistics__icon">
                                 <use xlink:href="images/svg/refresh.svg#Layer_1"></use>
                             </svg>
-                        </a>
+                        </button>
                     </div>
                     <div class="statistics__numbers">
                         <div class="statistics__box">
@@ -156,26 +156,169 @@
                         <h3>Earnings chart</h3>
                     </div>
                     <div class="statistics__buttons">
-                        <input type="checkbox" id="signups" class="statistics__check" checked>
+                        <input type="checkbox" id="signups" class="statistics__input-checkbox" checked>
                         <div class="statistics__checkbox">
-                            <label for="signups" class="statistics__signups"></label>
-                            <label for="signups" class="statistics__name">Signups</label>
+                            <label for="signups" class="statistics__name statistics__name--signups">Signups</label>
                         </div>
-                        <input type="checkbox" id="ftd" class="statistics__check" checked>
+                        <input type="checkbox" id="ftd" class="statistics__input-checkbox" checked>
                         <div class="statistics__checkbox">
-                            <label for="ftd" class="statistics__ftd"></label>
-                            <label for="ftd" class="statistics__name">FTD</label>
+                            <label for="ftd" class="statistics__name statistics__name--ftd">FTD</label>
                         </div>
-                        <input type="checkbox" id="earned" class="statistics__check">
+                        <input type="checkbox" id="earned" class="statistics__input-checkbox">
                         <div class="statistics__checkbox">
-                            <label for="earned" class="statistics__earned"></label>
-                            <label for="earned" class="statistics__name">Earned</label>
+                            <label for="earned" class="statistics__name statistics__name--earned">Earned</label>
                         </div>
                     </div>
                     <img src="/images/graph.png" alt="statistics graph" class="statistics__img">
                 </section>
                 <section class="links">
                     <h2 class="section__title">Links</h2>
+                    <div class="links__container">
+                        <button class="btn btn-orange btn-padding links__btn">+ add new</button>
+                        <table class="table">
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Homepage</h3></td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Currently offer</h3></td>
+                                <td><a href="#">http://www.currently.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Blurpix</h3></td>
+                                <td><a href="#">http://www.blurpix.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Your Site</h3></td>
+                                <td><a href="#">http://www.yoursite.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Google</h3></td>
+                                <td><a href="#">http://www.google.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Facebook</h3></td>
+                                <td><a href="#">http://www.facebook.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Dashboard</h3></td>
+                                <td><a href="#">http://www.dashboard.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Blurax</h3></td>
+                                <td><a href="#">http://www.bluerax.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Piece of Wine</h3></td>
+                                <td><a href="#">http://www.pieceofwine.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__title"><h3>Twitter</h3></td>
+                                <td><a href="#">http://www.twitter.com</a></td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--links">
+                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                                <td class="table__icon-box">
+                                    <svg class="table__icon table__icon--trash">
+                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
+                                    </svg>
+                                </td>
+                            </tr>
+                        </table>
+                        <button class="btn btn-orange btn-padding links__btn">+ add new</button>
+                    </div>
                 </section>
             </div>
         </div>

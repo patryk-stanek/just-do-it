@@ -8,9 +8,12 @@
     transition: $transition;
     backface-visibility: hidden;
     overflow: hidden;
+    border: none;
+    cursor: pointer;
 
     display: inline-block;
 
+    &-orange,
     &-orange:link,
     &-orange:visited {
         background-color: $color-orange-dark;
@@ -24,6 +27,7 @@
         }
     }
 
+    &-grey,
     &-grey:link,
     &-grey:visited {
         background-color: $color-grey-dark-2;
@@ -37,9 +41,14 @@
         }
     }
 
+    &-disabled,
     &-disabled:link,
     &-disabled:visited {
         background-color: $color-grey-light-1;
         cursor: not-allowed;
+    }
+
+    &-padding {
+        padding: 1rem 2rem;
     }
 }

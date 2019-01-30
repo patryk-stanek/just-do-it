@@ -1,0 +1,54 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+
+    &__title {
+        padding: 2rem 7.5rem 2rem 2rem;
+        margin-right: 5rem;
+    }
+
+    &__row {
+        border-top: 1px solid $color-grey-dark-3;
+        transition: $transition;
+        cursor: pointer;
+
+        &:last-of-type {
+            border-bottom: 1px solid $color-grey-dark-3;
+        }
+
+        &:hover,
+        &:active {
+            background-color: rgba($color-blue, .1);
+        }
+    }
+
+    &__row:hover > &__icon-box {
+        opacity: 1;
+    }
+
+    &__icon-box {
+        opacity: 0;
+        transition: $transition;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
+        opacity: .5;
+        transition: $transition;
+
+        &--links {
+            stroke: $color-orange;
+        }
+
+        &--trash {
+            stroke: $color-grey-dark-2;
+        }
+
+        &:hover,
+        &:active {
+            opacity: 1;
+        }
+    }
+}
