@@ -2,23 +2,46 @@
     border-bottom: 1px solid $color-grey-light-1; 
     color: $color-grey-dark-2;
 
+    @include respond(break-m) {
+        border-bottom: none;
+        border-top: 1px solid $color-grey-light-1; 
+    }
+
     &__list {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         list-style: none;
+
+        @include respond(break-m) { 
+            justify-content: space-between;
+            width: 100%;
+        }
     }
 
     &__item {
+        @include flex-row-center;
+        @include transition;
         border-left: 1px solid $color-grey-light-1;
         padding: 1rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        transition: $transition;
         
-        &:hover,
-        &:active {
-            background-color: rgba($color-grey-light-2, .7);
+        @include respond(hover) {
+        
+            &:hover,
+            &:active {
+                background-color: rgba($color-grey-light-2, .7);
+            }
+        }
+
+        @include respond(break-xl) {
+            padding: 0;
+        }
+
+        @include respond(break-m) {
+            width: 100%;
+            justify-content: center;
+
+            &:last-of-type {
+                border-right: 1px solid $color-grey-light-1;
+            }
         }
     }
 
@@ -29,11 +52,21 @@
         margin: 1.4rem;
         position: relative;
         z-index: 5;
+
+        @include respond(break-s) {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 1rem;
+        }
     }
 
     &__amount {
         font-size: 2rem;
         font-weight: 500;
+
+        @include respond(break-s) {
+            font-size: 1rem;
+        }
     }
 
     &__arrow {
@@ -59,15 +92,22 @@
             right: 1.2rem;
             z-index: 10;
             border-radius: 50%;
+
+            @include respond(break-s) {
+                top: 1rem;
+                right: 1rem;
+            }
         }
     }
 
     &__profile:link,
     &__profile:visited {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flex-row-center;
         font-size: 1.3rem;
         margin-right: 1.4rem;
+
+        @include respond(break-s) {
+            font-size: 1rem;
+        }
     }
 }

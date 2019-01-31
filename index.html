@@ -5,14 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-        <title>Just do it!</title>
+        <title>Just do it</title>
     </head>
     <body>
+        <input type="checkbox" id="side" class="sidebar__checkbox">
+        <label for="side" class="sidebar__block"><i class="sidebar__button fas fa-bars"></i></label>
         <nav class="sidebar">
             <div class="sidebar__top">
                 <span class="sidebar__logo">Just do it</span>
-                <a href="#" class="sidebar__block"><span class="sidebar__button">&nbsp;</span></a>
             </div>
             <ul class="sidebar__menu">
                 <li class="sidebar__item">
@@ -74,7 +76,7 @@
             </ul>
             <div class="sidebar__bottom">
                 <h4>Your manager</h4>
-                <a href="#" class="sidebar__mng"><img src="/images/mng-1.jpg" alt="Manager" class="sidebar__img">Priscilla C.</a>
+                <a href="#" class="sidebar__mng"><img src="/images/mng-1.jpg" srcset="/images/mng-1-sm.jpg 400w, /images/mng-1.jpg 800w" alt="Manager" class="sidebar__img">Priscilla C.</a>
             </div>
         </nav>
         <div id="right" class="column">
@@ -124,10 +126,10 @@
                             <input type="date" id="end" name="end"
                                 value="2018-07-25"
                                 min="2018-01-01" max="2019-12-31">
+                            <svg class="statistics__calendar">
+                                <use xlink:href="images/svg/calendar.svg#Layer_1"></use>
+                            </svg>
                         </div>
-                        <svg class="statistics__calendar">
-                            <use xlink:href="images/svg/calendar.svg#Layer_1"></use>
-                        </svg>
                         <button class="btn btn-orange">
                             <svg class="statistics__icon">
                                 <use xlink:href="images/svg/refresh.svg#Layer_1"></use>
@@ -169,7 +171,7 @@
                             <label for="earned" class="statistics__name statistics__name--earned">Earned</label>
                         </div>
                     </div>
-                    <img src="/images/graph.png" alt="statistics graph" class="statistics__img">
+                    <img src="images/graph.png" alt="statistics-graph" class="statistics__img">
                 </section>
                 <section class="links">
                     <h2 class="section__title">Links</h2>
@@ -178,13 +180,11 @@
                         <table class="table">
                             <tr class="table__row">
                                 <td class="table__title"><h3>Homepage</h3></td>
-                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.homepage.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>
@@ -192,13 +192,11 @@
                             </tr>
                             <tr class="table__row">
                                 <td class="table__title"><h3>Currently offer</h3></td>
-                                <td><a href="#">http://www.currently.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.currently.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>
@@ -206,13 +204,11 @@
                             </tr>
                             <tr class="table__row">
                                 <td class="table__title"><h3>Blurpix</h3></td>
-                                <td><a href="#">http://www.blurpix.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.blurpix.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>
@@ -220,13 +216,11 @@
                             </tr>
                             <tr class="table__row">
                                 <td class="table__title"><h3>Your Site</h3></td>
-                                <td><a href="#">http://www.yoursite.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.yoursite.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>
@@ -234,13 +228,11 @@
                             </tr>
                             <tr class="table__row">
                                 <td class="table__title"><h3>Google</h3></td>
-                                <td><a href="#">http://www.google.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.google.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>
@@ -248,13 +240,11 @@
                             </tr>
                             <tr class="table__row">
                                 <td class="table__title"><h3>Facebook</h3></td>
-                                <td><a href="#">http://www.facebook.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.facebook.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>
@@ -262,13 +252,11 @@
                             </tr>
                             <tr class="table__row">
                                 <td class="table__title"><h3>Dashboard</h3></td>
-                                <td><a href="#">http://www.dashboard.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.dashboard.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>
@@ -276,13 +264,11 @@
                             </tr>
                             <tr class="table__row">
                                 <td class="table__title"><h3>Blurax</h3></td>
-                                <td><a href="#">http://www.bluerax.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.bluerax.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>
@@ -290,13 +276,11 @@
                             </tr>
                             <tr class="table__row">
                                 <td class="table__title"><h3>Piece of Wine</h3></td>
-                                <td><a href="#">http://www.pieceofwine.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.pieceofwine.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>
@@ -304,13 +288,11 @@
                             </tr>
                             <tr class="table__row">
                                 <td class="table__title"><h3>Twitter</h3></td>
-                                <td><a href="#">http://www.twitter.com</a></td>
+                                <td><a href="#" class="hyperlink hyperlink-lg">http://www.twitter.com</a></td>
                                 <td class="table__icon-box">
                                     <svg class="table__icon table__icon--links">
                                         <use xlink:href="images/svg/links.svg#Layer_1"></use>
                                     </svg>
-                                </td>
-                                <td class="table__icon-box">
                                     <svg class="table__icon table__icon--trash">
                                         <use xlink:href="images/svg/trash.svg#Layer_1"></use>
                                     </svg>

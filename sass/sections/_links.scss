@@ -1,11 +1,17 @@
 .links {
     
     &__container {
-        display: flex;
-        align-items: center;
+        @include flex-col-center;
         justify-content: center;
-        flex-direction: column;
         padding: 0 20%;
+
+        @include respond(break-xl) {
+            padding: 0 10%;
+        }
+
+        @include respond(break-l) {
+            padding: 0 1rem;
+        }
     }
 
     &__btn {

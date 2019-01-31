@@ -5,38 +5,55 @@
     &__title {
         padding: 2rem 7.5rem 2rem 2rem;
         margin-right: 5rem;
+
+        @include respond(break-s) {
+            padding: 1rem;
+            margin: 0;
+        }
     }
 
     &__row {
+        @include transition;
         border-top: 1px solid $color-grey-dark-3;
-        transition: $transition;
         cursor: pointer;
 
         &:last-of-type {
             border-bottom: 1px solid $color-grey-dark-3;
         }
+        
+        @include respond(hover) {
 
-        &:hover,
-        &:active {
-            background-color: rgba($color-blue, .1);
+            &:hover,
+            &:active {
+                background-color: rgba($color-blue, .1);
+            }
+        }
+
+        @include respond(break-s) {
+            @include flex-col-center;
+            justify-content: center;
         }
     }
 
-    &__row:hover > &__icon-box {
-        opacity: 1;
-    }
-
     &__icon-box {
-        opacity: 0;
-        transition: $transition;
+        @include transition;
+        text-align: right;
+        padding-right: 1rem;
+
+        @include respond(break-s) {
+            @include flex-row-center;
+            opacity: 1;
+            justify-content: center;
+            padding: 1rem;
+        }
     }
 
     &__icon {
+        @include transition;
         width: 2rem;
         height: 2rem;
         margin-right: .5rem;
         opacity: .5;
-        transition: $transition;
 
         &--links {
             stroke: $color-orange;
@@ -45,10 +62,13 @@
         &--trash {
             stroke: $color-grey-dark-2;
         }
+        
+        @include respond(hover) {
 
-        &:hover,
-        &:active {
-            opacity: 1;
+            &:hover,
+            &:active {
+                opacity: 1;
+            }
         }
     }
 }

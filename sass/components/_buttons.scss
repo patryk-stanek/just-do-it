@@ -3,9 +3,8 @@
     text-decoration: none;
     font-weight: 300;
     color: $color-white;
-    // padding: 1rem 2rem;
     border-radius: 4px;
-    transition: $transition;
+    @include transition;
     backface-visibility: hidden;
     overflow: hidden;
     border: none;
@@ -17,13 +16,16 @@
     &-orange:link,
     &-orange:visited {
         background-color: $color-orange-dark;
+        
+        @include respond(hover) {
 
-        &:hover {
-            background-color: $color-orange;
-        }
+            &:hover {
+                background-color: $color-orange;
+            }
 
-        &:active {
-            transform: translateY(2px);
+            &:active {
+                transform: translateY(2px);
+            }
         }
     }
 
@@ -31,13 +33,16 @@
     &-grey:link,
     &-grey:visited {
         background-color: $color-grey-dark-2;
+        
+        @include respond(hover) {
 
-        &:hover {
-            background-color: $color-grey-dark-3;
-        }
+            &:hover {
+                background-color: $color-grey-dark-3;
+            }
 
-        &:active {
-            transform: translateY(2px);
+            &:active {
+                transform: translateY(2px);
+            }
         }
     }
 

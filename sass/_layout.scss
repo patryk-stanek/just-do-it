@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+*:focus {
+    outline: 0;
+}
+
 html {
     font-size: 62.5%;
     height: 100%;
@@ -31,6 +35,10 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @include respond(break-m) {
+        flex-direction: column-reverse;
+    }
 }
 
 .sidebar {
@@ -40,12 +48,26 @@ section {
     height: 100vh;
     background-color: $color-grey;
     width: 15%;
+
+    @include respond(break-m) {
+        width: 0;
+        overflow: hidden;
+
+        &__checkbox:checked ~ & {
+            width: 100%;
+        }
+    }
 }
 
 .topmenu {
     flex-shrink: 0;
     display: inline-flex;
     justify-content: flex-end;
+
+    @include respond(break-m) {
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 .content {
