@@ -823,6 +823,62 @@ section:not(:last-of-type) {
   }
 }
 
+.time-span {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+@media only screen and (max-width: 576px) {
+  .time-span {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 1rem 0;
+  }
+}
+
+.time-span__input {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 2rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 576px) {
+  .time-span__input {
+    margin: 1rem;
+    text-align: center;
+  }
+}
+
+.time-span__calendar {
+  fill: #bababa;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.time-span__icon {
+  fill: #ffffff;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin: 1rem;
+  z-index: 10;
+  display: block;
+}
+
 .topmenu {
   border-bottom: 1px solid #e3e3e3;
   color: #979797;
@@ -1057,62 +1113,6 @@ li {
 
 .links__btn {
   margin: 2rem;
-}
-
-.statistics__date {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding: 3rem 0;
-  border-bottom: 1px solid #e3e3e3;
-}
-
-@media only screen and (max-width: 576px) {
-  .statistics__date {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding: 1rem 0;
-  }
-}
-
-.statistics__input-date {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-align: center;
-      align-items: center;
-  margin-right: 2rem;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-}
-
-@media only screen and (max-width: 576px) {
-  .statistics__input-date {
-    margin: 1rem;
-    text-align: center;
-  }
-}
-
-.statistics__calendar {
-  fill: #bababa;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 1rem;
-}
-
-.statistics__icon {
-  fill: #ffffff;
-  width: 1.9rem;
-  height: 1.9rem;
-  margin: 1rem;
-  z-index: 10;
-  display: block;
 }
 
 .statistics__numbers {

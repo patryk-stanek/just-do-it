@@ -1,44 +1,44 @@
 .statistics {
 
-    &__date {
-        @include flex-row-center;
-        justify-content: center;
-        padding: 3rem 0;
-        border-bottom: 1px solid $color-grey-light-1;
+    // &__date {
+    //     @include flex-row-center;
+    //     justify-content: center;
+    //     padding: 3rem 0;
+    //     border-bottom: 1px solid $color-grey-light-1;
 
-        @include respond(break-s) {
-            flex-direction: column;
-            padding: 1rem 0;
-        }
-    }
+    //     @include respond(break-s) {
+    //         flex-direction: column;
+    //         padding: 1rem 0;
+    //     }
+    // }
 
-    &__input-date {
-        @include flex-row-center;
-        margin-right: 2rem;
-        border: 1px solid $color-grey-light-1;
-        border-radius: 4px;
+    // &__input-date {
+    //     @include flex-row-center;
+    //     margin-right: 2rem;
+    //     border: 1px solid $color-grey-light-1;
+    //     border-radius: 4px;
 
-        @include respond(break-s) {
-            margin: 1rem;
-            text-align: center;
-        }
-    }
+    //     @include respond(break-s) {
+    //         margin: 1rem;
+    //         text-align: center;
+    //     }
+    // }
 
-    &__calendar {
-        fill: $color-grey-dark-3;
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-right: 1rem;
-    }
+    // &__calendar {
+    //     fill: $color-grey-dark-3;
+    //     width: 1.5rem;
+    //     height: 1.5rem;
+    //     margin-right: 1rem;
+    // }
 
-    &__icon {
-        fill: $color-white;
-        width: 1.9rem;
-        height: 1.9rem;
-        margin: 1rem;
-        z-index: 10;
-        display: block;
-    }
+    // &__icon {
+    //     fill: $color-white;
+    //     width: 1.9rem;
+    //     height: 1.9rem;
+    //     margin: 1rem;
+    //     z-index: 10;
+    //     display: block;
+    // }
 
     &__numbers {
         @include flex-row;

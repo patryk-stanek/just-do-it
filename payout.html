@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Just do it</title>
+    </head>
+    <body>
+        <input type="checkbox" id="side" class="sidebar__checkbox">
+        <label for="side" class="sidebar__block"><i class="sidebar__button fas fa-bars"></i></label>
+        <nav class="sidebar">
+            <div class="sidebar__top">
+                <span class="sidebar__logo">Just do it</span>
+            </div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__item">
+                    <a href="index.html" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="images/svg/general.svg#Layer_1"></use>
+                        </svg>
+                        <span>General</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="images/svg/details.svg#Layer_1"></use>
+                        </svg>
+                        <span>Details</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="images/svg/links.svg#Layer_1"></use>
+                        </svg>
+                        <span>Links</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="banners.html" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="images/svg/banners.svg#Layer_1"></use>
+                        </svg>
+                        <span>Banners</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="images/svg/personaldata.svg#Layer_1"></use>
+                        </svg>
+                        <span>Personal Data</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="images/svg/payout.svg#Layer_1"></use>
+                        </svg>
+                        <span>Payout</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="images/svg/postback.svg#Layer_1"></use>
+                        </svg>
+                        <span>Postback</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar__bottom">
+                <h4>Your manager</h4>
+                <a href="#" class="sidebar__mng"><img src="/images/mng-1.jpg" srcset="/images/mng-1-sm.jpg 400w, /images/mng-1.jpg 800w" alt="Manager" class="sidebar__img">Priscilla C.</a>
+            </div>
+        </nav>
+        <div id="right" class="column">
+            <nav class="topmenu">
+                <ul class="topmenu__list">
+                    <li class="topmenu__item">
+                        <svg class="topmenu__icon">
+                            <use xlink:href="images/svg/wallet.svg#Layer_1"></use>
+                        </svg>
+                        <span class="topmenu__amount">$1,500.00</span>
+                        <svg class="topmenu__arrow">
+                            <use xlink:href="images/svg/arrow-down-small.svg#Layer_1"></use>
+                        </svg>
+                    </li>
+                    <li class="topmenu__item">
+                        <a href="#" class="topmenu__link">
+                            <svg class="topmenu__icon">
+                                <use xlink:href="images/svg/notification.svg#Layer_1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="topmenu__item">
+                        <a href="#" class="topmenu__profile">
+                            <svg class="topmenu__icon">
+                                <use xlink:href="images/svg/profile.svg#Layer_1"></use>
+                            </svg>
+                            <span>Leonardo Dicaprio</span>
+                        </a>
+                    </li>
+                    <li class="topmenu__item">
+                        <a href="#">
+                            <svg class="topmenu__icon">
+                                <use xlink:href="images/svg/quit.svg#Layer_1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <section class="payout">
+                    <h2 class="section__title">Payout history</h2>
+                    <div class="time-span">
+                        <div class="time-span__input">
+                            <input type="date" id="start" name="start"
+                                value="2018-07-22"
+                                min="2018-01-01" max="2019-12-31">
+                            <input type="date" id="end" name="end"
+                                value="2018-07-25"
+                                min="2018-01-01" max="2019-12-31">
+                            <svg class="time-span__calendar">
+                                <use xlink:href="images/svg/calendar.svg#Layer_1"></use>
+                            </svg>
+                        </div>
+                        <button class="btn btn-orange">
+                            <svg class="time-span__icon">
+                                <use xlink:href="images/svg/refresh.svg#Layer_1"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
