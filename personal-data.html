@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
+                    <a href="banners.html" class="sidebar__link">
                         <svg class="sidebar__icon">
                             <use xlink:href="images/svg/banners.svg#Layer_1"></use>
                         </svg>
@@ -116,86 +116,63 @@
                 </ul>
             </nav>
             <div class="content">
-                <section class="links">
-                    <h2 class="section__title">Banners</h2>
-                    <div class="links__container">
-                        <button class="btn btn-orange btn-padding links__btn">+ add new</button>
-                        <table class="table">
-                            <tr class="table__row">
-                                <td class="table__title"><h3>Homepage</h3></td>
-                                <td><a href="#" class="hyperlink hyperlink-lg">htpp://www.website.com/bannermain.gif</a></td>
-                                <td class="table__icon-box">
-                                    <svg class="table__icon table__icon--links">
-                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
-                                    </svg>
-                                    <svg class="table__icon table__icon--trash">
-                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
-                                    </svg>
-                                </td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__title"><h3>Sign up banner</h3></td>
-                                <td><a href="#" class="hyperlink hyperlink-lg">htpp://www.website.com/signup.gif</a></td>
-                                <td class="table__icon-box">
-                                    <svg class="table__icon table__icon--links">
-                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
-                                    </svg>
-                                    <svg class="table__icon table__icon--trash">
-                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
-                                    </svg>
-                                </td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__title"><h3>Banner left side</h3></td>
-                                <td><a href="#" class="hyperlink hyperlink-lg">htpp://www.website.com/leftside.gif</a></td>
-                                <td class="table__icon-box">
-                                    <svg class="table__icon table__icon--links">
-                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
-                                    </svg>
-                                    <svg class="table__icon table__icon--trash">
-                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
-                                    </svg>
-                                </td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__title"><h3>Vertical banner</h3></td>
-                                <td><a href="#" class="hyperlink hyperlink-lg">htpp://www.website.com/vert.gif</a></td>
-                                <td class="table__icon-box">
-                                    <svg class="table__icon table__icon--links">
-                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
-                                    </svg>
-                                    <svg class="table__icon table__icon--trash">
-                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
-                                    </svg>
-                                </td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__title"><h3>Front banner</h3></td>
-                                <td><a href="#" class="hyperlink hyperlink-lg">htpp://www.website.com/front.gif</a></td>
-                                <td class="table__icon-box">
-                                    <svg class="table__icon table__icon--links">
-                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
-                                    </svg>
-                                    <svg class="table__icon table__icon--trash">
-                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
-                                    </svg>
-                                </td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__title"><h3>Horizontal banner</h3></td>
-                                <td><a href="#" class="hyperlink hyperlink-lg">htpp://www.website.com/horizontal.gif</a></td>
-                                <td class="table__icon-box">
-                                    <svg class="table__icon table__icon--links">
-                                        <use xlink:href="images/svg/links.svg#Layer_1"></use>
-                                    </svg>
-                                    <svg class="table__icon table__icon--trash">
-                                        <use xlink:href="images/svg/trash.svg#Layer_1"></use>
-                                    </svg>
-                                </td>
-                            </tr>
-                        </table>
-                        <button class="btn btn-orange btn-padding links__btn">+ add new</button>
-                    </div>
+                <section class="personal-data">
+                    <h2 class="section__title">Personal data</h2>
+                    <form>
+                        <ul class="data-input">
+                            <ul class="data-input__box">
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="name">Name</label>
+                                    <input class="data-input__input" type="text" id="name" minlength="3" required>
+                                </li>
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="surname">Surname</label>
+                                    <input class="data-input__input" type="text" id="surname" minlength="3" required>
+                                </li>
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="email">E-Mail</label>
+                                    <input class="data-input__input" type="email" id="email" minlength="3" required>
+                                </li>
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="phone">Phone</label>
+                                    <input class="data-input__input" type="tel" id="phone" minlength="3" required>
+                                </li>
+                            </ul>
+                            <ul class="data-input__box">
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="skype">Skype</label>
+                                    <input class="data-input__input" type="text" id="skype">
+                                </li>
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="icq">ICQ</label>
+                                    <input class="data-input__input" type="text" id="icq">
+                                </li>
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="msn">MSN</label>
+                                    <input class="data-input__input" type="text" id="msn">
+                                </li>
+                            </ul>
+                            <ul class="data-input__box">
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="wallet">Wallet</label>
+                                    <input class="data-input__input" type="text" id="wallet" minlength="3" required>
+                                </li>
+                            </ul>
+                            <ul class="data-input__box">
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="password">Password</label>
+                                    <input class="data-input__input" type="password" id="password" minlength="3" required>
+                                </li>
+                                <li class="data-input__container">
+                                    <label class="data-input__label" for="password-repeat">Repeat</label>
+                                    <input class="data-input__input" type="password" id="password-repeat" minlength="3" required>
+                                </li>
+                            </ul>
+                            <ul class="data-input__box">
+                                <button type="submit" class="btn btn-orange btn-padding">Save</button>
+                            </ul>
+                        </ul>
+                    </form>
                 </section>
             </div>
         </div>
