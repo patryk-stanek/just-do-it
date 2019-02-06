@@ -5,13 +5,13 @@
     & th {
         color: $color-grey-dark-2;
         font-size: 1.4rem;
-        padding: 2rem 1rem;
+        padding: 20px 10px;
         text-align: left;
-        margin: 1rem;
+        margin: 10px;
     }
 
     & td {
-        padding: 2rem 1rem;
+        padding: 20px 10px;
         font-size: 1.4rem;
         font-weight: 300;
     }
@@ -30,19 +30,18 @@
 
     &__arrow {
         fill: currentColor;
-        width: .8rem;
-        height: .8rem;
-        margin: .5rem;
-        // margin: 1.4rem;
+        width: 8px;
+        height: 8px;
+        margin: 5px;
         cursor: pointer;
     }
 
     &__title {
-        padding: 2rem 7.5rem 2rem 2rem;
+        padding: 20px 75px 20px 20px;
         margin-right: 5rem;
 
         @include respond(break-s) {
-            padding: 1rem;
+            padding: 10px;
             margin: 0;
         }
     }
@@ -73,21 +72,21 @@
     &__icon-box {
         @include transition;
         text-align: right;
-        padding-right: 1rem;
+        padding-right: 10px;
 
         @include respond(break-s) {
             @include flex-row-center;
             opacity: 1;
             justify-content: center;
-            padding: 1rem;
+            padding: 10px;
         }
     }
 
     &__icon {
         @include transition;
-        width: 2rem;
-        height: 2rem;
-        margin-right: .5rem;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
         opacity: .5;
 
         &--links {

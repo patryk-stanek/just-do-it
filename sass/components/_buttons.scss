@@ -12,9 +12,9 @@
 
     display: inline-block;
 
-    &-orange,
-    &-orange:link,
-    &-orange:visited {
+    &--orange,
+    &--orange:link,
+    &--orange:visited {
         background-color: $color-orange-dark;
         
         @include respond(hover) {
@@ -29,9 +29,9 @@
         }
     }
 
-    &-grey,
-    &-grey:link,
-    &-grey:visited {
+    &--grey,
+    &--grey:link,
+    &--grey:visited {
         background-color: $color-grey-dark-2;
         
         @include respond(hover) {
@@ -46,14 +46,14 @@
         }
     }
 
-    &-disabled,
-    &-disabled:link,
-    &-disabled:visited {
+    &--disabled,
+    &--disabled:link,
+    &--disabled:visited {
         background-color: $color-grey-light-1;
         cursor: not-allowed;
     }
 
-    &-padding {
+    &--padding {
         padding: 1rem 2rem;
     }
 }

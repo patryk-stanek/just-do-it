@@ -21,7 +21,7 @@ $break-xs: 320px;
         @media only screen and (max-width: $break-xl) { @content };
     }
     @if $breakpoint == hover {
-        @media only screen and (min-width: $break-xl) { @content };
+        @media not all and (hover: none) { @content };
     }
 }
 

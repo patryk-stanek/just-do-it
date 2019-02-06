@@ -9,11 +9,11 @@
     &__top {
         @include flex-row-center;
         justify-content: space-between;
-        padding: 1.5rem;
+        padding: 15px;
         position: relative;
 
         @include respond(break-l) {
-            padding: .5rem;
+            padding: 5px;
         }
     }
 
@@ -34,9 +34,9 @@
     }
 
     &__block {
-        width: 3rem;
-        height: 3rem;
-        margin-right: .5rem;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
         border: 1px solid transparent;
         border-radius: 4px;
         background-color: transparent;
@@ -47,8 +47,8 @@
 
         @include respond(break-m) {
             position: absolute;
-            top: .5rem;
-            left: .5rem;
+            top: 5px;
+            left: 5px;
             @include flex-col-center;
             justify-content: center;
         }
@@ -60,7 +60,7 @@
     }
 
     &__menu {
-        padding-bottom: 2.5rem;
+        padding-bottom: 25px;
         border-bottom: 1px solid $color-grey-dark-1;
         list-style: none;
 
@@ -98,36 +98,47 @@
 
     &__icon {
         fill: currentColor;
-        width: 1.8rem;
-        height: 1.8rem;
-        margin: 1.4rem;
+        width: 18px;
+        height: 18px;
+        margin: 14px;
 
         @include respond(break-xl) {
-            margin: 1rem;
+            margin: 10px;
         }
 
         @include respond(break-l) {
-            height: 1.5rem;
-            width: 1.5rem;
-            margin: 1rem .5rem;
+            height: 15px;
+            width: 15px;
+            margin: 10px 5px;
         }
 
         @include respond(break-m) {
-            height: 2rem;
-            width: 2rem;
-            margin: 2rem 1.5rem 2rem 0;
+            height: 20px;
+            width: 20px;
+            margin: 20px 15px 20px 0;
         }
     }
 
     &__bottom {
-        padding: 2rem;
+        padding: 20px;
 
         @include respond(break-xl) {
-            padding: 1rem;
+            padding: 10px;
         }
 
         @include respond(break-m) {
             @include flex-col-center;
+        }
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $color-grey-dark-2;
+        text-transform: uppercase;
+    
+        @include respond(break-l) {
+            font-size: 1.2rem;
         }
     }
 
@@ -136,25 +147,25 @@
         @include flex-row-center;
         @include transition;
         font-size: 1.4rem;
-        margin-top: 1.5rem;
+        margin-top: 15px;
         position: relative;
 
         &::before {
             content: "";
             display: block;
-            width: 1.2rem;
-            height: 1.2rem;
+            width: 12px;
+            height: 12px;
             position: absolute;
             top: 0;
-            left: 4rem;
+            left: 40px;
             background-color: $color-green-dark;
             z-index: 10;
             border-radius: 50%;
 
             @include respond(break-l) {
-                left: 2.5rem;
-                width: 1rem;
-                height: 1rem;
+                left: 25px;
+                width: 10px;
+                height: 10px;
             }
         }
         
@@ -169,15 +180,15 @@
 
     &__img {
         border-radius: 50%;
-        width: 5rem;
-        height: 5rem;
-        margin-right: 1rem;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
         z-index: 5;
         position: relative;
 
         @include respond(break-l) {
-            width: 3.5rem;
-            height: 3.5rem;
+            width: 35px;
+            height: 35px;
         }
     }
 }

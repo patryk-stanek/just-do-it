@@ -2,38 +2,38 @@
     
     @include flex-row-center;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 30px 0;
     border-bottom: 1px solid $color-grey-light-1;
 
     @include respond(break-s) {
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 10px 0;
     }
 
     &__input {
         @include flex-row-center;
-        margin-right: 2rem;
+        margin-right: 20px;
         border: 1px solid $color-grey-light-1;
         border-radius: 4px;
 
         @include respond(break-s) {
-            margin: 1rem;
+            margin: 10px;
             text-align: center;
         }
     }
 
     &__calendar {
         fill: $color-grey-dark-3;
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-right: 1rem;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
     }
 
     &__icon {
         fill: $color-white;
-        width: 1.9rem;
-        height: 1.9rem;
-        margin: 1rem;
+        width: 19px;
+        height: 19px;
+        margin: 10px;
         z-index: 10;
         display: block;
     }

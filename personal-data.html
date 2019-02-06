@@ -75,8 +75,8 @@
                 </li>
             </ul>
             <div class="sidebar__bottom">
-                <h4>Your manager</h4>
-                <a href="#" class="sidebar__mng"><img src="/images/mng-1.jpg" srcset="/images/mng-1-sm.jpg 400w, /images/mng-1.jpg 800w" alt="Manager" class="sidebar__img">Priscilla C.</a>
+                <span class="sidebar__title">Your manager</span>
+                <a href="#" class="sidebar__mng"><img src="/images/mng-1.jpg" srcset="/images/mng-1-sm.jpg 400w, /images/mng-1.jpg 800w" sizes="100vw" alt="Manager" class="sidebar__img">Priscilla C.</a>
             </div>
         </nav>
         <div id="right" class="column">
@@ -118,60 +118,60 @@
             <div class="content">
                 <section class="personal-data">
                     <h2 class="section__title">Personal data</h2>
-                    <form>
-                        <ul class="data-input">
-                            <ul class="data-input__box">
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="name">Name</label>
-                                    <input class="data-input__input" type="text" id="name" minlength="3" required>
-                                </li>
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="surname">Surname</label>
-                                    <input class="data-input__input" type="text" id="surname" minlength="3" required>
-                                </li>
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="email">E-Mail</label>
-                                    <input class="data-input__input" type="email" id="email" minlength="3" required>
-                                </li>
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="phone">Phone</label>
-                                    <input class="data-input__input" type="tel" id="phone" minlength="3" required>
-                                </li>
-                            </ul>
-                            <ul class="data-input__box">
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="skype">Skype</label>
-                                    <input class="data-input__input" type="text" id="skype">
-                                </li>
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="icq">ICQ</label>
-                                    <input class="data-input__input" type="text" id="icq">
-                                </li>
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="msn">MSN</label>
-                                    <input class="data-input__input" type="text" id="msn">
-                                </li>
-                            </ul>
-                            <ul class="data-input__box">
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="wallet">Wallet</label>
-                                    <input class="data-input__input" type="text" id="wallet" minlength="3" required>
-                                </li>
-                            </ul>
-                            <ul class="data-input__box">
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="password">Password</label>
-                                    <input class="data-input__input" type="password" id="password" minlength="3" required>
-                                </li>
-                                <li class="data-input__container">
-                                    <label class="data-input__label" for="password-repeat">Repeat</label>
-                                    <input class="data-input__input" type="password" id="password-repeat" minlength="3" required>
-                                </li>
-                            </ul>
-                            <ul class="data-input__box">
-                                <button type="submit" class="btn btn-orange btn-padding">Save</button>
-                            </ul>
-                        </ul>
+                    <form class="data-input">
+                        <fieldset class="data-input__box">
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="name">Name</label>
+                                <input class="data-input__input" type="text" id="name" minlength="3" required>
+                            </div>
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="surname">Surname</label>
+                                <input class="data-input__input" type="text" id="surname" minlength="3" required>
+                            </div>
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="email">E-Mail</label>
+                                <input class="data-input__input" type="email" id="email" minlength="3" required>
+                            </div>
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="phone">Phone</label>
+                                <input class="data-input__input" type="tel" id="phone" minlength="3" required>
+                            </div>
+                        </fieldset>
+                        <fieldset class="data-input__box">
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="skype">Skype</label>
+                                <input class="data-input__input" type="text" id="skype">
+                            </div>
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="icq">ICQ</label>
+                                <input class="data-input__input" type="text" id="icq">
+                            </div>
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="msn">MSN</label>
+                                <input class="data-input__input" type="text" id="msn">
+                            </div>
+                        </fieldset>
+                        <fieldset class="data-input__box">
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="wallet">Wallet</label>
+                                <input class="data-input__input" type="text" id="wallet" minlength="3" required>
+                            </div>
+                        </fieldset>
+                        <fieldset class="data-input__box">
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="password">Password</label>
+                                <input class="data-input__input" type="password" id="password" minlength="3" required>
+                            </div>
+                            <div class="data-input__container">
+                                <label class="data-input__label" for="password-repeat">Repeat</label>
+                                <input class="data-input__input" type="password" id="password-repeat" minlength="3" required>
+                            </div>
+                        </fieldset>
+                        <fieldset class="data-input__box">
+                            <div class="data-input__container">
+                                <button class="btn btn--orange btn--padding">Save</button>
+                            </div>
+                        </fieldset>
                     </form>
                 </section>
             </div>
