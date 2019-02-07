@@ -882,21 +882,21 @@ section:not(:last-of-type) {
   width: 100%;
 }
 
-.table th {
+.table__head {
   color: #979797;
   font-size: 1.4rem;
-  padding: 20px 10px;
+  padding: 10px 20px;
   text-align: left;
   margin: 10px;
 }
 
-.table td {
-  padding: 20px 10px;
+.table__cell {
+  padding: 20px 20px;
   font-size: 1.4rem;
   font-weight: 300;
 }
 
-.table span {
+.table__option {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -904,9 +904,12 @@ section:not(:last-of-type) {
   -ms-flex-align: center;
       align-items: center;
   transition: all .2s ease-out;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: -5px;
 }
 
-.table span:hover, .table span:active {
+.table__option:hover, .table__option:active {
   background-color: #f5f5f2;
   border-radius: 4px;
   color: #000000;
@@ -917,7 +920,6 @@ section:not(:last-of-type) {
   width: 8px;
   height: 8px;
   margin: 5px;
-  cursor: pointer;
 }
 
 .table__title {
