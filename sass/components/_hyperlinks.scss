@@ -4,6 +4,10 @@
     &-lg:link,
     &-lg:visited {
         font-size: 1.6rem;
+
+        @include respond(break-s) {
+            font-size: 1.2rem;
+        }
     }
 
     &-sm:link,

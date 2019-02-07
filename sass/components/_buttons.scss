@@ -11,6 +11,10 @@
     cursor: pointer;
 
     display: inline-block;
+    
+    @include respond(break-s) {
+        font-size: 1.4rem;
+    }
 
     &--orange,
     &--orange:link,
@@ -54,6 +58,6 @@
     }
 
     &--padding {
-        padding: 1rem 2rem;
+        padding: 10px 20px;
     }
 }

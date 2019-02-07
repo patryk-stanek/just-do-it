@@ -436,6 +436,12 @@ section:not(:last-of-type) {
   padding: 15px;
 }
 
+@media only screen and (max-width: 991px) {
+  .content {
+    padding: 5px;
+  }
+}
+
 .btn {
   font-size: 1.8rem;
   text-decoration: none;
@@ -449,6 +455,12 @@ section:not(:last-of-type) {
   border: none;
   cursor: pointer;
   display: inline-block;
+}
+
+@media only screen and (max-width: 576px) {
+  .btn {
+    font-size: 1.4rem;
+  }
 }
 
 .btn--orange, .btn--orange:link, .btn--orange:visited {
@@ -483,7 +495,7 @@ section:not(:last-of-type) {
 }
 
 .btn--padding {
-  padding: 1rem 2rem;
+  padding: 10px 20px;
 }
 
 .data-input {
@@ -586,6 +598,12 @@ section:not(:last-of-type) {
   font-size: 1.6rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .hyperlink-lg:link, .hyperlink-lg:visited {
+    font-size: 1.2rem;
+  }
+}
+
 .hyperlink-sm:link, .hyperlink-sm:visited {
   font-size: 1.3rem;
 }
@@ -615,6 +633,12 @@ section:not(:last-of-type) {
 
 .page-counter__link {
   padding: 10px 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  .page-counter__link {
+    padding: 5px;
+  }
 }
 
 .page-counter__link--current {
@@ -727,6 +751,31 @@ section:not(:last-of-type) {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
+  }
+}
+
+.sidebar__item {
+  border-bottom: 1px solid transparent;
+}
+
+.sidebar__item--current-page {
+  background-color: #000000;
+  border-bottom: 1px solid #333333;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebar__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
   }
 }
 
@@ -880,20 +929,35 @@ section:not(:last-of-type) {
 .table {
   border-collapse: collapse;
   width: 100%;
+  max-width: 100%;
 }
 
 .table__head {
   color: #979797;
   font-size: 1.4rem;
-  padding: 10px 20px;
+  padding: 10px 10px;
   text-align: left;
   margin: 10px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .table__head {
+    font-size: 1.2rem;
+    padding: 10px 5px;
+  }
+}
+
 .table__cell {
-  padding: 20px 20px;
+  padding: 20px 10px;
   font-size: 1.4rem;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 1200px) {
+  .table__cell {
+    padding: 10px 5px;
+    font-size: 1.2rem;
+  }
 }
 
 .table__option {
@@ -907,6 +971,8 @@ section:not(:last-of-type) {
   cursor: pointer;
   padding: 5px;
   margin-left: -5px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .table__option:hover, .table__option:active {
@@ -950,19 +1016,6 @@ section:not(:last-of-type) {
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .table__row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
-}
-
 .table__icon-box {
   transition: all .2s ease-out;
   text-align: right;
@@ -1003,6 +1056,13 @@ section:not(:last-of-type) {
 @media not all and (hover: none) {
   .table__icon:hover, .table__icon:active {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .table__icon {
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -1217,7 +1277,7 @@ h3 {
 @media only screen and (max-width: 576px) {
   h2,
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1272,6 +1332,19 @@ li {
 
 .details__container {
   padding: 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .details__container {
+    padding: 10px 0;
+  }
+}
+
+.details__wrapper {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
 }
 
 .links__container {
@@ -1295,6 +1368,12 @@ li {
 @media only screen and (max-width: 991px) {
   .links__container {
     padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .links__container {
+    padding: 0;
   }
 }
 
@@ -1397,13 +1476,6 @@ li {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .statistics__buttons {
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-}
-
 .statistics__checkbox {
   display: -ms-flexbox;
   display: flex;
@@ -1461,9 +1533,9 @@ li {
   padding: 10px 15px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 576px) {
   .statistics__name {
-    padding: 0;
+    padding: 5px;
   }
 }
 

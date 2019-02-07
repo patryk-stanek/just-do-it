@@ -10,7 +10,7 @@ h3 {
     color: $color-grey-dark-3;
 
     @include respond(break-s) {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 

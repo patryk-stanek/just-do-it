@@ -12,6 +12,10 @@
         @include respond(break-l) {
             padding: 0 10px;
         }
+
+        @include respond(break-s) {
+            padding: 0;
+        }
     }
 
     &__btn {

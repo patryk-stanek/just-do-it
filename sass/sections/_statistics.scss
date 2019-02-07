@@ -60,10 +60,6 @@
         @include respond(break-l) {
             padding: 20px;
         }
-
-        @include respond(break-m) {
-            flex-direction: column;
-        }
     }
 
     &__checkbox {
@@ -108,8 +104,8 @@
         width: 100%;
         padding: 10px 15px;
 
-        @include respond(break-m) {
-            padding: 0;
+        @include respond(break-s) {
+            padding: 5px;
         }
 
         &::before {

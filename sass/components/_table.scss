@@ -1,21 +1,32 @@
 .table {
     border-collapse: collapse;
     width: 100%;
+    max-width: 100%;
 
     //DETAILS & PAYOUT
 
     &__head {
         color: $color-grey-dark-2;
         font-size: 1.4rem;
-        padding: 10px 20px;
+        padding: 10px 10px;
         text-align: left;
         margin: 10px;
+
+        @include respond(break-xl) {
+            font-size: 1.2rem;
+            padding: 10px 5px;
+        }
     }
 
     &__cell {
-        padding: 20px 20px;
+        padding: 20px 10px;
         font-size: 1.4rem;
         font-weight: 300;
+
+        @include respond(break-xl) {
+            padding: 10px 5px;
+            font-size: 1.2rem;
+        }
     }
 
     &__option {
@@ -24,6 +35,7 @@
         cursor: pointer;
         padding: 5px;
         margin-left: -5px;
+        display: inline-flex;
 
         &:hover,
         &:active {
@@ -68,11 +80,6 @@
                 background-color: rgba($color-blue, .1);
             }
         }
-
-        @include respond(break-s) {
-            @include flex-col-center;
-            justify-content: center;
-        }
     }
 
     &__icon-box {
@@ -109,6 +116,11 @@
             &:active {
                 opacity: 1;
             }
+        }
+
+        @include respond(break-s) {
+            width: 15px;
+            height: 15px;
         }
     }
 }

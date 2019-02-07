@@ -11,6 +11,10 @@
     &__link {
         padding: 10px 15px;
 
+        @include respond(break-l) {
+            padding: 5px;
+        }
+
         &--current {
             color: $color-grey-dark-2;
             font-weight: 500;
