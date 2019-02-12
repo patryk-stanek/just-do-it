@@ -76,7 +76,9 @@
             </ul>
             <div class="sidebar__bottom">
                 <span class="sidebar__title">Your manager</span>
-                <a href="#" class="sidebar__mng"><img src="/images/mng-1.jpg" srcset="/images/mng-1-sm.jpg 400w, /images/mng-1.jpg 800w" sizes="100vw" alt="Manager" class="sidebar__img">Priscilla C.</a>
+                <button class="js--open-modal sidebar__mng" data-modal="overlayThree">
+                    <img src="/images/mng-1.jpg" srcset="/images/mng-1-sm.jpg 400w, /images/mng-1.jpg 800w" sizes="100vw" alt="Manager" class="sidebar__img">Priscilla C.
+                </button>
             </div>
         </nav>
         <div id="right" class="column">
@@ -99,19 +101,19 @@
                         </a>
                     </li>
                     <li class="topmenu__item">
-                        <a href="#" class="topmenu__profile">
+                        <button class="js--open-modal topmenu__button topmenu__profile" data-modal="overlayOne">
                             <svg class="topmenu__icon">
                                 <use xlink:href="images/svg/profile.svg#Layer_1"></use>
                             </svg>
                             <span>Leonardo Dicaprio</span>
-                        </a>
+                        </button>
                     </li>
                     <li class="topmenu__item">
-                        <a href="#">
+                        <button class="js--open-modal topmenu__button" data-modal="overlayTwo">
                             <svg class="topmenu__icon">
                                 <use xlink:href="images/svg/quit.svg#Layer_1"></use>
                             </svg>
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </nav>

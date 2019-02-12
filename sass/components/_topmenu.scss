@@ -100,14 +100,24 @@
         }
     }
 
-    &__profile:link,
-    &__profile:visited {
+    &__profile {
+        margin-right: 14px;
+    }
+
+    &__button {
+        border: none;
+        background: transparent;
+        color: $color-blue;
+        cursor: pointer;
+        font-weight: 300;
         @include flex-row-center;
         font-size: 1.3rem;
-        margin-right: 14px;
+        // margin-right: 14px;
 
         @include respond(break-s) {
             font-size: 1rem;
         }
     }
+
+
 }

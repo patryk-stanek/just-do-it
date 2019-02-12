@@ -163,13 +163,17 @@
         }
     }
 
-    &__mng:link,
-    &__mng:visited {
+    &__mng {
+        cursor: pointer;
+        font-weight: 300;
+        border: none;
+        background: transparent;
         @include flex-row-center;
         @include transition;
         font-size: 1.4rem;
         margin-top: 15px;
         position: relative;
+        color: $color-blue;
 
         &::before {
             content: "";
