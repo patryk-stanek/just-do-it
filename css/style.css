@@ -575,6 +575,7 @@ section:not(:last-of-type) {
   border-radius: 4px;
   padding: 10px;
   font-weight: 300;
+  font-size: 1.2rem;
 }
 
 .data-input__input:hover, .data-input__input:active {
@@ -1889,6 +1890,10 @@ li {
   .statistics__img {
     padding: 10px;
   }
+}
+
+.statistics__graph {
+  padding: 30px;
 }
 
 input[type=date] {

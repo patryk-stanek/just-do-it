@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
+                    <a href="postback.html" class="sidebar__link">
                         <svg class="sidebar__icon">
                             <use xlink:href="images/svg/postback.svg#Layer_1"></use>
                         </svg>
@@ -159,7 +159,7 @@
                     <div class="statistics__earnings">
                         <h3>Earnings chart</h3>
                     </div>
-                    <div class="statistics__buttons">
+                    <!-- <div class="statistics__buttons">
                         <input type="checkbox" id="signups" class="statistics__input-checkbox" checked>
                         <div class="statistics__checkbox">
                             <label for="signups" class="statistics__name statistics__name--signups">Signups</label>
@@ -172,8 +172,9 @@
                         <div class="statistics__checkbox">
                             <label for="earned" class="statistics__name statistics__name--earned">Earned</label>
                         </div>
-                    </div>
-                    <img src="images/graph.png" alt="statistics-graph" class="statistics__img">
+                    </div> -->
+                    <!-- <img src="images/graph.png" alt="statistics-graph" class="statistics__img"> -->
+                    <canvas id="myChart" class="statistics__graph"></canvas>
                 </section>
                 <section class="links">
                     <h2 class="section__title">Links</h2>
@@ -418,6 +419,7 @@
             </div>
         </div>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="js/script.js"></script>
 
     </body>

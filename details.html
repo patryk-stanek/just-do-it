@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
+                    <a href="postback.html" class="sidebar__link">
                         <svg class="sidebar__icon">
                             <use xlink:href="images/svg/postback.svg#Layer_1"></use>
                         </svg>
@@ -295,5 +295,79 @@
                 </section>
             </div>
         </div>
+
+        <div class="modal" id="overlayOne">
+            <div class="modal__box" id="myModal">
+                <h2 class="section__title">Login</h2>
+                <div class="modal__content">
+                    <form class="modal__form">
+                        <div class="modal__input-box">
+                            <svg class="modal__icon">
+                                <use xlink:href="images/svg/login.svg#Layer_1"></use>
+                            </svg>
+                            <input class="modal__input-area" type="text" id="name" minlength="3" placeholder="login name" required>
+                        </div>
+                        <div class="modal__input-box">
+                            <svg class="modal__icon">
+                                <use xlink:href="images/svg/password.svg#Layer_1"></use>
+                            </svg>
+                            <input class="modal__input-area" type="password" id="password" minlength="3" placeholder="password" required>
+                        </div>
+                        <div class="modal__div">
+                            <button class="btn btn--orange btn--padding">Enter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="overlayTwo">
+            <div class="modal__box" id="myModal">
+                <h2 class="section__title">Do You really want to Quit?</h2>
+                <div class="modal__content">
+                    <div class="modal__button-box">
+                        <button class="modal__btn btn btn--grey btn--padding js--close-modal">Cancel</button>
+                        <button class="modal__btn btn btn--orange btn--padding">Quit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal" id="overlayThree">
+            <div class="modal__box" id="myModal">
+                <div class="modal__head">
+                    <h2 class="modal__title">Online chat with Your personal manager</h2>
+                    <svg class="modal__close js--close-modal">
+                        <use xlink:href="images/svg/close.svg#Layer_1"></use>
+                    </svg>
+                </div>
+                <div class="modal__container">
+                    <img src="images/mng-1.jpg" alt="manager" class="modal__img">
+                    <div class="modal__manager">
+                        <span class="modal__mng-name">Priscilla C.</span>
+                        <span class="modal__online">online</span>
+                    </div>
+                </div>
+                <div class="modal__message-container">
+                    <span class="modal__message modal__message--recived">Hello. Can I help You?</span>
+                    <span class="modal__message modal__message--send">Hello! I would like to know about Postback.</span>
+                    <span class="modal__message modal__message--recived">Ok. 5 min...</span>
+                </div>
+                <div class="modal__container">
+                    <div class="modal__input-box">
+                        <svg class="modal__icon">
+                            <use xlink:href="images/svg/message.svg#Layer_1"></use>
+                        </svg>
+                        <input class="modal__input-area" type="text" placeholder="Enter the message...">
+                    </div>
+                    <div class="modal__div">
+                        <button class="btn btn--orange btn--padding">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    
     </body>
 </html>
