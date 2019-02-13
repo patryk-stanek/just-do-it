@@ -37,9 +37,9 @@
     "sass": "node-sass --output-style expanded --source-map true -o css sass",
     "autoprefixer": "autoprefixer-cli -o css/style.css css/style.css",
     "img": "npm-run-all img:*",
-    "img:compress": "imagemin images/*.{png,jpg,gif} --out-dir-comp/",
-    "img:remove": "rm -rf images",
-    "img:rename": "mv comp images"
+    "img:compress": "imagemin images/*.{png,jpg,gif} --out-dir=comp/",
+    "img:remove": "rm -rf images/*.{png,jpg,gif}",
+    "img:move": "mv comp/* images/ && rm -rf comp"
   },
   "repository": {
     "type": "git",
