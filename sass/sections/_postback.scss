@@ -111,14 +111,12 @@
     &__status {
         width: 100%;
         padding: 20px;
-        // background-color: orangered;
         border-right: 1px solid $color-grey-light-1;
     }
 
     &__send {
         width: 100%;
         padding: 20px 30px 0 10px;
-        // background-color: lightblue;
 
             @include respond(break-l) {
                 padding: 20px 30px;
@@ -138,21 +136,14 @@
 
         &::-webkit-slider-thumb {
             appearance: none;
-            // width: 25px;
-            // height: 25px;
             background-color: $color-orange-dark;
             height: 15px;
             width: 15px;
             cursor: pointer;
             border-radius: 50%;
-            // position: absolute;
-            // bottom: -10px;
         }
 
         &::-moz-range-thumb {
-            // width: 25px;
-            // height: 25px;
-            // background-color: orangered;
             cursor: pointer;
         }
 
@@ -205,7 +196,6 @@
     &__checkbox:checked + &__label {
 
         &:before {
-            // background-color: $color-orange-dark;
             content: "⤫";
             font-size: 25px;
             line-height: 17px;
@@ -231,7 +221,6 @@
     }
 
     &__footer {
-        // float: right;
         text-align: right;
         padding: 20px;
 
