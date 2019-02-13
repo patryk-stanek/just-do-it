@@ -119,7 +119,117 @@
             </nav>
             <div class="content">
                 
-                asdasdasd
+                <section class="postback">
+                    <h2 class="section__title">New Postback</h2>
+                    <div class="postback__content">
+                        <span class="postback__text">You can insert some parameters in this postback:</span>
+                        <div class="postback__inputarea">
+                            <div class="postback__box">
+                                <h3>Signup</h3>
+                                <textarea class="postback__input-box" type="text" rows="10" placeholder="crm_userld=%user_id%"></textarea>
+                            </div>
+                            <div class="postback__box">
+                                <h3>Deposit</h3>
+                                <textarea class="postback__input-box" type="text" rows="10" placeholder="crm_userld=%user_id%"></textarea>
+                            </div>
+                        </div>
+                        <div class="postback__inputarea">
+                            <div class="postback__box">
+                                <h3>Postback type</h3>
+                                <div class="postback__selectbox">
+                                    <select name="postback-type" class="postback__select">
+                                        <option value="s2s">S2S (http://..)</option>
+                                        <option value="s2s">S2S (http://..)</option>
+                                        <option value="s2s">S2S (http://..)</option>
+                                        <option value="s2s">S2S (http://..)</option>
+                                        <option value="s2s">S2S (http://..)</option>
+                                    </select>
+                                    <svg class="postback__icon">
+                                        <use xlink:href="images/svg/arrow-down.svg#Layer_1"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="postback__box">
+                                <h3>To countries</h3>
+                                <div class="postback__selectbox">
+                                    <select name="postback-type" class="postback__select">
+                                        <option>Select countries</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="france">France</option>
+                                        <option value="spain">Spain</option>
+                                        <option value="uk">UK</option>
+                                    </select>
+                                    <svg class="postback__icon">
+                                        <use xlink:href="images/svg/arrow-down.svg#Layer_1"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="postback__box">
+                                <h3>Sending options:</h3>
+                                <div class="postback__selectbox">
+                                    <select name="postback-type" class="postback__select">
+                                        <option>Select</option>
+                                        <option value="bank-transfer">Bank transfer</option>
+                                        <option value="post-mail">Post mail</option>
+                                    </select>
+                                    <svg class="postback__icon">
+                                        <use xlink:href="images/svg/arrow-down.svg#Layer_1"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postback__double-box">
+                        <div class="postback__status">
+                            <h3><span class="postback__red">NOT</span> send statuses</h3>
+                            <div class="postback__box">
+                                <ul class="postback__list">
+                                    <li class="postback__item">
+                                        <input type="checkbox" id="checkNumber1" class="postback__checkbox">
+                                        <label for="checkNumber1" class="postback__label">checkNumber</label>
+                                    </li>
+                                    <li class="postback__item">
+                                        <input type="checkbox" id="noAnswer1" class="postback__checkbox" checked>
+                                        <label for="noAnswer1" class="postback__label">noAnswer</label>
+                                    </li>
+                                    <li class="postback__item">
+                                        <input type="checkbox" id="noCall1" class="postback__checkbox">
+                                        <label for="noCall1" class="postback__label">noCall</label>
+                                    </li>
+                                    <li class="postback__item">
+                                        <input type="checkbox" id="callAgain1" class="postback__checkbox" checked>
+                                        <label for="callAgain1" class="postback__label">callAgain</label>
+                                    </li>
+                                    <li class="postback__item">
+                                        <input type="checkbox" id="checkNumber2" class="postback__checkbox">
+                                        <label for="checkNumber2" class="postback__label">checkNumber</label>
+                                    </li>
+                                    <li class="postback__item">
+                                        <input type="checkbox" id="noAnswer2" class="postback__checkbox">
+                                        <label for="noAnswer2" class="postback__label">noAnswer</label>
+                                    </li>
+                                    <li class="postback__item">
+                                        <input type="checkbox" id="noCall2" class="postback__checkbox">
+                                        <label for="noCall2" class="postback__label">noCall</label>
+                                    </li>
+                                    <li class="postback__item">
+                                        <input type="checkbox" id="callAgain2" class="postback__checkbox">
+                                        <label for="callAgain2" class="postback__label">callAgain</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="postback__send">
+                            <div class="postback__box">
+                                <h3>Send after:</h3>
+                                <input class="postback__slider" type="range" min="0" max="168" class="slider" value="1" id="range">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postback__footer">
+                        <button class="btn btn--orange btn--padding">Create Pixel</button>
+                    </div>
+                </section>
 
             </div>
         </div>
