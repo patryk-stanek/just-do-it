@@ -3,16 +3,16 @@
     
     &-lg:link,
     &-lg:visited {
-        font-size: 1.6rem;
+        font-size: $font-m;
 
         @include respond(break-s) {
-            font-size: 1.2rem;
+            font-size: $font-xs;
         }
     }
 
     &-sm:link,
     &-sm:visited {
-        font-size: 1.3rem;
+        font-size: $font-xs;
     }
 
     @include respond(hover) {

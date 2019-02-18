@@ -20,12 +20,15 @@
             font-weight: 500;
             background-color: $color-grey-light-2;
         }
-
-        &:hover,
-        &:active {
+        
+        @include respond(hover) {
             
-            &:not(.page-counter__link--current) {
-                background-color: $color-grey-light-1;
+            &:hover,
+            &:active {
+                
+                &:not(.page-counter__link--current) {
+                    background-color: $color-grey-light-1;
+                }
             }
         }
     }

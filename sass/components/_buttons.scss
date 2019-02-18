@@ -1,5 +1,5 @@
 .btn {
-    font-size: $button;
+    font-size: $font-l;
     text-decoration: none;
     font-weight: 300;
     color: $color-white;
@@ -13,7 +13,7 @@
     display: inline-block;
     
     @include respond(break-s) {
-        font-size: 1.4rem;
+        font-size: $font-s;
     }
 
     &--orange,
@@ -50,18 +50,7 @@
         }
     }
 
-    &--disabled,
-    &--disabled:link,
-    &--disabled:visited {
-        background-color: $color-grey-light-1;
-        cursor: not-allowed;
-    }
-
     &--padding {
         padding: 10px 20px;
-    }
-
-    &--padding-big {
-        padding: 10px 40px;
     }
 }

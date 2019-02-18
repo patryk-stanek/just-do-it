@@ -159,21 +159,6 @@
                     <div class="statistics__earnings">
                         <h3>Earnings chart</h3>
                     </div>
-                    <!-- <div class="statistics__buttons">
-                        <input type="checkbox" id="signups" class="statistics__input-checkbox" checked>
-                        <div class="statistics__checkbox">
-                            <label for="signups" class="statistics__name statistics__name--signups">Signups</label>
-                        </div>
-                        <input type="checkbox" id="ftd" class="statistics__input-checkbox" checked>
-                        <div class="statistics__checkbox">
-                            <label for="ftd" class="statistics__name statistics__name--ftd">FTD</label>
-                        </div>
-                        <input type="checkbox" id="earned" class="statistics__input-checkbox">
-                        <div class="statistics__checkbox">
-                            <label for="earned" class="statistics__name statistics__name--earned">Earned</label>
-                        </div>
-                    </div> -->
-                    <!-- <img src="images/graph.png" alt="statistics-graph" class="statistics__img"> -->
                     <canvas id="myChart" class="statistics__graph"></canvas>
                 </section>
                 <section class="links">
@@ -354,15 +339,19 @@
                 <div class="modal__content">
                     <form class="modal__form">
                         <div class="modal__input-box">
-                            <svg class="modal__icon">
-                                <use xlink:href="images/svg/login.svg#Layer_1"></use>
-                            </svg>
+                            <label for="name">
+                                <svg class="modal__icon">
+                                    <use xlink:href="images/svg/login.svg#Layer_1"></use>
+                                </svg>
+                            </label>
                             <input class="modal__input-area" type="text" id="name" minlength="3" placeholder="login name" required>
                         </div>
                         <div class="modal__input-box">
-                            <svg class="modal__icon">
-                                <use xlink:href="images/svg/password.svg#Layer_1"></use>
-                            </svg>
+                            <label for="password">
+                                <svg class="modal__icon">
+                                    <use xlink:href="images/svg/password.svg#Layer_1"></use>
+                                </svg>
+                            </label>
                             <input class="modal__input-area" type="password" id="password" minlength="3" placeholder="password" required>
                         </div>
                         <div class="modal__div">

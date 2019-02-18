@@ -5,7 +5,7 @@
     }
 
     &__text {
-        font-size: 1.6rem;
+        font-size: $font-m;
         font-weight: 300;
         padding-bottom: 20px;
     }
@@ -62,7 +62,7 @@
         padding: 15px;
         border: 1px solid $color-grey-light-1;
         border-radius: 4px;
-        font-size: 1.2rem;
+        font-size: $font-xs;
         font-weight: 300;
         resize: none;
         color: $color-grey-dark-2;
@@ -78,7 +78,7 @@
     }
 
     &__select {
-        font-size: 1.4rem;
+        font-size: $font-s;
         padding: 10px;
         font-weight: 300;
         width: 100%;
@@ -155,7 +155,7 @@
         &::before,
         &::after {
             position: absolute;
-            font-size: 1.4rem;
+            font-size: $font-s;
             font-weight: 300;
             top: -25px;
             display: block;

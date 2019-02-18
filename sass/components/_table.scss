@@ -7,25 +7,25 @@
 
     &__head {
         color: $color-grey-dark-2;
-        font-size: 1.4rem;
+        font-size: $font-s;
         padding: 10px 10px;
         text-align: left;
         margin: 10px;
 
         @include respond(break-xl) {
-            font-size: 1.2rem;
+            font-size: $font-xs;
             padding: 10px 5px;
         }
     }
 
     &__cell {
         padding: 20px 10px;
-        font-size: 1.4rem;
+        font-size: $font-s;
         font-weight: 300;
 
         @include respond(break-xl) {
             padding: 10px 5px;
-            font-size: 1.2rem;
+            font-size: $font-xs;
         }
     }
 
@@ -36,12 +36,15 @@
         padding: 5px;
         margin-left: -5px;
         display: inline-flex;
+        
+        @include respond(hover) {
 
-        &:hover,
-        &:active {
-            background-color: $color-grey-light-2;
-            border-radius: 4px;
-            color: $color-black;
+            &:hover,
+            &:active {
+                background-color: $color-grey-light-2;
+                border-radius: 4px;
+                color: $color-black;
+            }
         }
     }
 
@@ -68,6 +71,7 @@
         @include transition;
         border-top: 1px solid $color-grey-light-1;
         cursor: pointer;
+        white-space: nowrap;
 
         &:last-of-type {
             border-bottom: 1px solid $color-grey-light-1;

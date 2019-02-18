@@ -19,7 +19,7 @@
 
     &__logo {
         font-family: $font-logo;
-        font-size: 3rem;
+        font-size: $font-huge;
         color: $color-white;
         word-spacing: -5px;
 
@@ -55,8 +55,9 @@
     }
 
     &__button {
-        font-size: 2rem;
+        font-size: $font-xl;
         color: $color-grey-dark-3;
+        z-index: 101;
     }
 
     &__menu {
@@ -110,11 +111,6 @@
                 }
             }
         }
-
-        @include respond(break-m) {
-            // width: 100%;
-            // background-color: red;
-        }
     }
 
     &__icon {
@@ -153,13 +149,13 @@
     }
 
     &__title {
-        font-size: 1.4rem;
+        font-size: $font-s;
         font-weight: 500;
         color: $color-grey-dark-2;
         text-transform: uppercase;
     
         @include respond(break-l) {
-            font-size: 1.2rem;
+            font-size: $font-xs;
         }
     }
 
@@ -170,7 +166,7 @@
         background: transparent;
         @include flex-row-center;
         @include transition;
-        font-size: 1.4rem;
+        font-size: $font-s;
         margin-top: 15px;
         position: relative;
         color: $color-blue;

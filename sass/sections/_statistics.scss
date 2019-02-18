@@ -31,11 +31,11 @@
     }
 
     &__count {
-        font-size: 1.6rem;
+        font-size: $font-m;
         font-weight: 300;
 
         @include respond(break-s) {
-            font-size: 1.4rem;
+            font-size: $font-s;
         }
     }
 
@@ -69,7 +69,7 @@
         border-radius: 4px;
         justify-content: center;
         position: relative;
-        font-size: 1.6rem;
+        font-size: $font-m;
         font-weight: 300;
         color: $color-blue;
         border: 1px solid transparent;
@@ -94,7 +94,7 @@
         @include respond(break-s) {
             margin-bottom: 10px;
             padding: 5px;
-            font-size: 1.4rem;
+            font-size: $font-s;
         }
     }
 
@@ -169,7 +169,13 @@
     &__graph {
         padding: 30px;
         max-width: 1200px;
+        width: 100%;
         margin: 0 auto;
+
+        @include respond(break-l) {
+            padding: 0;
+            margin: 0;
+        }
     }
 }
 
@@ -177,7 +183,7 @@ input[type=date] {
     border: none;
     padding: 3px;
     margin: 5px;
-    font-size: 1.4rem;
+    font-size: $font-s;
     font-weight: 300;
     padding-right: 40px;
 

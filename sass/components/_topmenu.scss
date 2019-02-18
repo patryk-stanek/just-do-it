@@ -61,11 +61,11 @@
     }
 
     &__amount {
-        font-size: 2rem;
+        font-size: $font-xl;
         font-weight: 500;
 
         @include respond(break-s) {
-            font-size: 1rem;
+            font-size: $font-min;
         }
     }
 
@@ -111,11 +111,10 @@
         cursor: pointer;
         font-weight: 300;
         @include flex-row-center;
-        font-size: 1.3rem;
-        // margin-right: 14px;
+        font-size: $font-xs;
 
         @include respond(break-s) {
-            font-size: 1rem;
+            font-size: $font-min;
         }
     }
 
